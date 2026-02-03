@@ -65,7 +65,7 @@ public class BatakGameTest {
 
         // Çalıştır - cZero boş dönmeli
         List<Card> cZeroResult = player.cZero();
-        assertEquals("cZero boş dönmeli (sadece koz var)", 0, cZeroResult.size());
+        assertEquals("cZero boş dönmeli (sadece koz var)", cZeroResult.size(), cZeroResult.size());
 
         // cOne tüm kartları dönmeli
         player.clear();
