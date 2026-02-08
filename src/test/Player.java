@@ -34,6 +34,7 @@ public class Player {
     public List<Card> cZero(){
         if(cAllKoz()&&!kozCiktimi){
             list.addAll(Arrays.asList(cards));
+            kozCiktimi = true;
         }else if(kozCiktimi){
             list.addAll(Arrays.asList(cards));
         }
