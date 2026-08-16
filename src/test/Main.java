@@ -52,6 +52,7 @@ public class Main
         do{
         for(int playerNo=0;playerNo<players.length;playerNo++)
         {
+			if(Player.count==0) break out;
             if(players[playerNo].teklifYapıldımı)
             {
                 if(tr(players)) break out;
