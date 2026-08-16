@@ -54,7 +54,7 @@ public class Main
         {
             if(players[playerNo].teklifYapıldımı)
             {
-                
+                if(tr(players)) break out;
                 System.out.print(players[playerNo]+" lütfen teklif yapınız:");
                 String   s = scanner.nextLine();
                 
@@ -72,7 +72,7 @@ public class Main
                     players[playerNo].teklifYapıldımı = false;
                     Player.count--;
                 }
-                if(tr(players)) break out;
+                
                     
             }
         }
