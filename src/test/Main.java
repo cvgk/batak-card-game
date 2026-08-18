@@ -68,6 +68,7 @@ public class Main
                        yeniTeklif = Integer.valueOf(s);
                        }
                        teklif = yeniTeklif;
+					   j = playerNo;
                 }
                 else{
                     players[playerNo].teklifYapıldımı = false;
