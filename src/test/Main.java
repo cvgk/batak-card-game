@@ -153,7 +153,7 @@ public class Main
 		for(Player player:players){
             if(player.oyunaBaslayan)
             {
-                int score = player.getScore()>= teklif ? teklif : -teklif;
+                int score = player.getScore()>= teklif ? player.getScore() : -teklif;
                 player.setScore(score);
             }else{
                 int score = player.getScore() == 0 ? -teklif : player.getScore();
