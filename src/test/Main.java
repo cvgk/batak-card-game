@@ -84,7 +84,7 @@ public class Main
         System.out.print("koz: ");
         String koz = scanner.nextLine();
         Player.koz = koz;
-
+        players[j].oyunaBaslayan = true;
         int count =0;
         i=0;
         while(count<13){
@@ -149,6 +149,16 @@ public class Main
             System.out.println("------------------------------------------------");
             map.clear();
 
+        }
+		for(Player player:players){
+            if(player.oyunaBaslayan)
+            {
+                int score = player.getScore()>= teklif ? teklif : -teklif;
+                player.setScore(score);
+            }else{
+                int score = player.getScore() == 0 ? -teklif : player.getScore();
+                player.setScore(score);
+            }
         }
         for(Player player:players)
             System.out.println(player+": "+player.getScore());
@@ -288,6 +298,7 @@ class Player {
     static boolean kozCiktimi;
     private int score;
     boolean teklifYapıldımı;
+	boolean oyunaBaslayan;
     static int count;
     public Player() { }
     public Player(int playerNo){
