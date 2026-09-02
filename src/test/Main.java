@@ -68,7 +68,7 @@ public class Main
                 {
                        int yeniTeklif = Integer.parseInt(s);
                        while(yeniTeklif<=teklif){
-                       System.out.print(players[playerNo]+" lütfen teklif yapınız");
+                       System.out.print(players[playerNo%4]+" lütfen teklif yapınız");
                        s=scanner.nextLine();
                        yeniTeklif = Integer.valueOf(s);
                        }
