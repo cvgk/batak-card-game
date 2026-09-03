@@ -159,7 +159,7 @@ public class Main
             map.clear();
 
         }
-        teklif=4;
+        
         Player.count =0;
         Player.kozCiktimi = false;
         for(Player player:players)
@@ -183,6 +183,7 @@ public class Main
                player.oyunaBaslayan =  false;
                player.setScore(0);
         }
+		teklif=4;	
         }
 		
 	}
